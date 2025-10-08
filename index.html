@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Vivek Vijay Pawar — frontend developer. Projects, skills, and contact. Accessible semantic HTML, responsive CSS, and light JS.">
+  <meta name="author" content="Vivek Vijay Pawar">
+  <title>Vivek Vijay Pawar Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header with navigation -->
+  <header>
+    <div class="brand">
+      <h1>Vivek Vijay Pawar</h1>
+      <p>Frontend Developer</p>
+    </div>
+    <nav role="navigation" aria-label="Main Navigation">
+      <ul>
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- About Me Section -->
+    <section id="about-me" aria-labelledby="about-heading">
+      <h2 id="about-heading">About Me</h2>
+      <p>Hello! I'm Vivek Vijay Pawar, a frontend developer passionate about building accessible, responsive, and interactive web applications. I focus on semantic HTML, modern CSS, and JavaScript best practices.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
+
+      <article>
+        <figure>
+          <img src="project1.jpg" alt="Screenshot of WAF demo project">
+          <figcaption>WAF Demo Website</figcaption>
+        </figure>
+        <p>A frontend demonstration of a Web Application Firewall, showing how rules are applied and logged.</p>
+      </article>
+
+      <article>
+        <figure>
+          <img src="project2.jpg" alt="Screenshot of portfolio website">
+          <figcaption>Portfolio Website</figcaption>
+        </figure>
+        <p>Responsive portfolio website built with semantic HTML, CSS Grid, and Flexbox.</p>
+      </article>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills</h2>
+      <ul>
+        <li>HTML5 & Semantic HTML</li>
+        <li>CSS3 (Flexbox, Grid, Animations)</li>
+        <li>JavaScript (ES6+)</li>
+        <li>Responsive Web Design</li>
+        <li>Accessibility (a11y)</li>
+        <li>Basic Web Security Concepts</li>
+      </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Me</h2>
+      <form aria-label="Contact Form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required placeholder="Your full name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="you@example.com">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required placeholder="Write your message here"></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Vivek Vijay Pawar | Built with HTML, CSS, and JS | Accessible & Responsive</p>
+  </footer>
+</body>
+</html>
