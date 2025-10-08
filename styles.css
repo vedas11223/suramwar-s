@@ -1,0 +1,189 @@
+/* ----------------------------
+   Step 3: Basic Styles
+------------------------------- */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #1d5c63;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ----------------------------
+   Header & Navigation
+------------------------------- */
+header {
+  background-color: #1d5c63;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header .brand {
+  text-align: center;
+}
+
+header nav {
+  text-align: center;
+  margin-top: 10px;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #ef7c8e;
+}
+
+/* ----------------------------
+   Sections Styling
+------------------------------- */
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #1d5c63;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* About Me */
+#about-me p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Projects Section */
+#projects article {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#projects article figure {
+  flex: 1 1 200px;
+  margin: 0 20px 0 0;
+}
+
+#projects article img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+#projects article p {
+  flex: 2 1 400px;
+}
+
+/* Skills Section */
+#skills ul li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 25px;
+}
+
+#skills ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #1d5c63;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: auto;
+}
+
+form label {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+form button {
+  margin-top: 20px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1d5c63;
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #ef7c8e;
+}
+
+/* Footer */
+footer {
+  background-color: #1d5c63;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+}
+
+/* ----------------------------
+   Responsive Design
+------------------------------- */
+@media (max-width: 768px) {
+  header nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  #projects article {
+    flex-direction: column;
+  }
+
+  #projects article figure,
+  #projects article p {
+    margin: 0;
+  }
+}
+
+/* Images & Videos Responsive */
+img, video {
+  max-width: 100%;
+  height: auto;
+}
